@@ -52,9 +52,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     }
     override fun onSensorChanged(event: SensorEvent?) {
-                    counter+= 1
-                    txtWalk.text = counter.toString()
+        counter+= 1
+        txtWalk.text = counter.toString()
     }
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
     }
+
 }
